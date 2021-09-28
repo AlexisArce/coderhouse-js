@@ -5,7 +5,7 @@ module.exports = {
   mode: "development",
   target: "web",
   entry: {
-    app: path.resolve(__dirname, "js", "index.js"),
+    app: path.resolve(__dirname, "src/js", "index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -17,6 +17,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        loader: "babel-loader",
       },
     ],
   },

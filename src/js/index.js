@@ -1,4 +1,5 @@
 import Producto from "./producto";
+import $ from "jquery";
 
 const carrito = [];
 let agregarProducto = true;
@@ -28,4 +29,5 @@ carrito.forEach((item) => {
 
 console.log(`Total: $ ${total}`);
 
-//const divs = $("div");//
+const $divs = $("div"); //
+console.log($divs);
