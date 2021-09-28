@@ -17,10 +17,6 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        options: {
-          plugins: ["@babel/plugin-syntax-top-level-await"],
-        },
       },
     ],
   },

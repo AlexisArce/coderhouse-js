@@ -27,3 +27,5 @@ carrito.forEach((item) => {
 });
 
 console.log(`Total: $ ${total}`);
+
+//const divs = $("div");//
