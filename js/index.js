@@ -1,8 +1,4 @@
-function Item(nombre, precio, cantidad) {
-  this.nombre = nombre;
-  this.precio = precio;
-  this.cantidad = cantidad;
-}
+import Producto from "./producto";
 
 const carrito = [];
 let agregarProducto = true;
@@ -10,9 +6,9 @@ let agregarProducto = true;
 while (agregarProducto) {
   const nombre = prompt("Por favor ingrese el nombre del producto");
   const precio = parseFloat(prompt("Por favor ingrese el precio del producto"));
-  const cantidad = parseInt(prompt("Por favor ingrese la cantidad"));
+  const cantidad = parseInt(prompt("Por favor ingrese la cantidad: "));
 
-  const item = new Item(nombre, precio, cantidad);
+  const item = new Producto(nombre, precio, cantidad);
   carrito.push(item);
 
   agregarProducto = confirm("¿Desea agregar otro producto al carrito?");
