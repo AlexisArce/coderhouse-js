@@ -1,4 +1,5 @@
 import numeral from "numeral";
+
 class Product {
   constructor(id, name, price) {
     this.id = parseInt(id);
