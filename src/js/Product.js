@@ -1,14 +1,4 @@
 import numeral from "numeral";
-
-numeral.register("locale", "ar", {
-  delimiters: {
-    thousands: ".",
-    decimal: ",",
-  },
-});
-
-numeral.locale("ar");
-
 class Product {
   constructor(id, name, price) {
     this.id = parseInt(id);
