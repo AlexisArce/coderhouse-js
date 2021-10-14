@@ -430,3 +430,7 @@ Stripe Styles
 .home-icon svg {
   fill: rgb(51, 51, 51);
 }
+
+.filter:hover {
+  color: darkgreen !important;
+}
