@@ -49,8 +49,8 @@ function verCarrito_Click(e) {
     return `<tr> <th scope="row">
       <img
         class="img-fluid"
-        width="40"
-        height="40"
+        width="30"
+        height="30"
         src="${i.image}"
       />
     </th>
