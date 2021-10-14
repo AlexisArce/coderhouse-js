@@ -21,7 +21,7 @@ function agregar_Click(e) {
   e.preventDefault();
 
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const products = JSON.parse(localStorage.getItem("products"));
+  const products = JSON.parse(localStorage.getItem("products")) || [];
   const id = parseInt($(this).prop("id"));
   const product = products.find((p) => p.id === id);
 
